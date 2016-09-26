@@ -17,15 +17,15 @@ import {
 @Component({
   templateUrl: 'app/apps/gestion-de-aulas/gestion-de-aulas.html'
 })
-class GestiondeAulas implements AfterViewInit {
+class GestiondeAulas{//} implements AfterViewInit {
   private data: Object = {}
   constructor(private elementRef: ElementRef) {
     this.llenar()
   }
-  ngAfterViewInit() {
+  /*ngAfterViewInit() {
     let tabla = $('#tabla');
     tabla.DataTable();
-  }
+  }*/
   llenar() {
     this.data = [{
       'dep': 'Lima'
